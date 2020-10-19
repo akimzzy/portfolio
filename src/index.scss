@@ -41,6 +41,7 @@ html {
 #root {
   max-height: 100vh;
   overflow: hidden;
+  background-color: #000000;
 }
 
 *,
@@ -68,14 +69,14 @@ h3 {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
 }
 ::-webkit-scrollbar-track {
   background-color: rgb(213, 208, 208);
   border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #131b1d;
+  background-color: #7c7c7c;
   border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
