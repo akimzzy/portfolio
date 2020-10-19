@@ -6,6 +6,10 @@
   overflow: hidden;
   transform-origin: top;
 
+  @media only screen and (max-width: 500px) {
+    padding: 1rem;
+  }
+
   .top {
     display: flex;
     align-items: flex-start;

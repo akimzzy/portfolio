@@ -1,10 +1,30 @@
+@font-face {
+  font-family: "QuickReg";
+  src: url("./assets/font/Quicksand-Regular.otf") format("opentype"),
+    url("./assets/font/quicksand-regular-webfont.woff") format("woff"),
+    url("./assets/font/quicksand-regular-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "QuickLight";
+  src: url("./assets/font/Quicksand-Light.otf") format("opentype"),
+    url("./assets/font/quicksand-light-webfont.woff") format("woff"),
+    url("./assets/font/quicksand-light-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "QuickBold";
+  src: url("./assets/font/Quicksand-Bold.otf") format("opentype"),
+    url("./assets/font/quicksand-bold-webfont.woff") format("woff"),
+    url("./assets/font/quicksand-bold-webfont.woff2") format("woff2");
+}
+
 html {
   box-sizing: border-box;
   font-size: 80%;
   font-family: "Roboto", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   line-height: 1.1rem;
-  letter-spacing: 1px;
+  // letter-spacing: 1px;
+  font-family: 'QuickReg';
   // cursor: none;
 }
 
@@ -31,13 +51,20 @@ html {
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: 'QuickBold';
+}
+
 h2 {
   font-size: 2rem;
-  font-weight: 300;
+  // font-weight: 500;
+
 }
 
 h3 {
-  font-weight: 500;
+  // font-weight: 500;
+  font-family: 'QuickBold';
+
 }
 
 ::-webkit-scrollbar {
@@ -62,7 +89,9 @@ h3 {
   background-color: #1a11c7;
   border-radius: 50%;
   transition: transform 0.1s ease;
-  transform: translate(50%, 50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   pointer-events: none;
   mix-blend-mode: difference;
   z-index: 1500;
