@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 
 
 import "./App.scss";
@@ -26,21 +27,25 @@ function App() {
     move();
   });
 
-  const display = () => {
-    if(width <= 1024) {
-      return <Home/>
-    } else {
-      return <>
-          <Home />
-          <Works />
-          <Contact />
-      </>
-    }
-  }
-
   return (
-    <div className="page">{display()}<div className="cursor"></div></div>
+    <Router>
+      <div className="cursor"></div>
+      <Switch>
+        <Route path="/" exact component={width <= 1024 ? Home : fullHome} />
+        <Route path="/contact" component={width <= 1024 ? Contact : fullHome} />
+        <Route path="/works" component={width <= 1024 ? Works : fullHome} />
+      </Switch>
+    </Router>
   );
+}
+
+
+function fullHome(){
+  return <div className="page">
+  <Home />
+  <Works />
+  <Contact />
+  </div>
 }
 
 export default App;

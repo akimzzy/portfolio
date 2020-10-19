@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Home.module.scss";
 import { motion } from "framer";
+import useBoxHeight from "../useBoxHeight";
+import { Link } from "react-router-dom";
 
 let transition = { type: "easeOut", delay: 0.3, duration: 0.5 };
 
@@ -89,15 +91,7 @@ export default function Home() {
             />
           </svg>
         </figure>
-
-        <ul>
-          <motion.li variants={linkVariants} initial="hidden" animate="visible">
-            WORKS
-          </motion.li>
-          <motion.li variants={linkVariants} initial="hidden" animate="visible">
-            CONTACT
-          </motion.li>
-        </ul>
+        {useBoxHeight().width <= 1024 ? <ul> <Link to='/works'>Works</Link> <Link to='/contact'>Contact</Link> </ul> : <></>}
       </motion.div>
 
       <motion.div
