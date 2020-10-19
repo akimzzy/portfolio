@@ -94,7 +94,7 @@ export default function Works() {
       <motion.div variants={boxVariants}>
         <div className={styles.top}>
           <h2>Works</h2>
-          {useBoxHeight().width <= 1024 ? <ul> <Link to='/'>Home</Link> <Link to='/contact'>Contact</Link> </ul> : <></>}
+          {useBoxHeight().width <= 1024 ? <div> <Link to='/'>Home</Link> <Link to='/contact'>Contact</Link> </div> : <></>}
         </div>
         {/* <p>
           Some of the project done with HTML, CSS/SCSS, Javascript, Reactjs,

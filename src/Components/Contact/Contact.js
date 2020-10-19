@@ -78,7 +78,7 @@ export default function Contact() {
     >
       <div className={styles.top}>
         <motion.h2 variants={boxVariants} initial="hidden" animate="visible">Contact</motion.h2>
-        {useBoxHeight().width <= 1024 ? <ul> <Link to='/'>Home</Link> <Link to='/works'>Works</Link> </ul> : <></>}
+        {useBoxHeight().width <= 1024 ? <div> <Link to='/'>Home</Link> <Link to='/works'>Works</Link> </div> : <></>}
       {/* <p>
         Some of the project done with HTML, CSS/SCSS, Javascript, Reactjs,
         Nodejs, Express, Nextjs, etc.
