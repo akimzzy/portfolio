@@ -91,7 +91,7 @@ export default function Home() {
             />
           </svg>
         </figure>
-        {useBoxHeight().width <= 1024 ? <ul> <Link to='/works'>Works</Link> <Link to='/contact'>Contact</Link> </ul> : <></>}
+        {useBoxHeight().width <= 1024 ? <div> <Link to='/works'>WORKS</Link> <Link to='/contact'>CONTACT</Link> </div> : <></>}
       </motion.div>
 
       <motion.div
@@ -100,8 +100,8 @@ export default function Home() {
         animate="visible"
         className={styles.text}
       >
-        <h1>akeem</h1>
-        <p>Front end developer</p>
+        <h1>Akeem</h1>
+        <p>Front end developer from Nigeria <img src={require('../../assets/Nigeria.svg') } alt='Nigeria' /></p>
         {/* <span>
           A goal-driven front-end developer with an unending passion to learn
           new tech in software development while building responsive websites

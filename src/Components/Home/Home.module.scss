@@ -5,6 +5,10 @@
   height: 100vh;
   transform-origin: top;
 
+  @media only screen and (max-width: 500px) {
+    padding: 1rem;
+  }
+
   figure {
     height: 2.5rem;
     width: 2.5rem;
@@ -19,14 +23,10 @@
       display: flex;
       justify-content: space-between;
 
-    ul {
-        display: flex;
-        list-style-type: none;
-
-        li {
-            font-size: .8rem;
-            margin: .5rem;
-        }
+    a:link, a:visited {
+     color: white; 
+     margin: .5rem;
+     text-decoration: none;
     }
   }
 
