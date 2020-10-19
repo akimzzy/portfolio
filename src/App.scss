@@ -1,0 +1,16 @@
+.page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: black;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // height: 100%;
+  // width: 100%;
+
+  @media only screen and (max-width: 1000px) {
+    grid-template-columns: 1fr;
+
+  }
+}
+
