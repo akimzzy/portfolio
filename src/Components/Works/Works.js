@@ -32,7 +32,7 @@ const boxVariants = {
 };
 
 export default function Works() {
-  const width = useBoxHeight().width
+  // const width = useBoxHeight().width
 
   const container = useRef();
 

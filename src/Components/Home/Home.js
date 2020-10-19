@@ -6,18 +6,18 @@ import { Link } from "react-router-dom";
 
 let transition = { type: "easeOut", delay: 0.3, duration: 0.5 };
 
-const linkVariants = {
-  hidden: {
-    y: -30,
-    opacity: 0,
-  },
+// const linkVariants = {
+//   hidden: {
+//     y: -30,
+//     opacity: 0,
+//   },
 
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: { ...transition, delay: 2.5 },
-  },
-};
+//   visible: {
+//     y: 0,
+//     opacity: 1,
+//     transition: { ...transition, delay: 2.5 },
+//   },
+// };
 
 const containerVariants = {
   hidden: {
