@@ -1,25 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+
+import "./App.scss";
+import Home from "./Components/Home/Home";
+import Works from "./Components/Works/Works";
+import Contact from "./Components/Contact/Contact";
+import useBoxHeight from "./Components/useBoxHeight";
+
+
 
 function App() {
+  const width = useBoxHeight().width
+
+
+  const move = () => {
+    const cursor = document.querySelector(".cursor");
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.top = e.pageY + "px";
+      cursor.style.left = e.pageX + "px";
+    });
+  };
+
+  useEffect(() => {
+    move();
+  });
+
+  const display = () => {
+    if(width <= 1024) {
+      return <Home/>
+    } else {
+      return <>
+          <Home />
+          <Works />
+          <Contact />
+      </>
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="page">{display()}<div className="cursor"></div></div>
   );
 }
 
