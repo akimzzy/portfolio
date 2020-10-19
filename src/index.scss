@@ -27,7 +27,12 @@ html {
   font-family: 'QuickReg';
   background-color: #000000;
 
-  // cursor: none;
+  cursor: none;
+
+  @media only screen and (max-width: 1000px) {
+    cursor: auto;
+
+  }
 }
 
 body {
@@ -84,7 +89,7 @@ h3 {
   border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #7c7c7c;
+  background-color: #adaaaa;
   border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -98,10 +103,16 @@ h3 {
   background-color: #1a11c7;
   border-radius: 50%;
   transition: transform 0.1s ease;
-  top: 50%;
-  left: 50%;
+  // top: -50%;
+  // left: -50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
   mix-blend-mode: difference;
   z-index: 1500;
+  transform-origin: center;
+
+  @media only screen and (max-width: 1000px) {
+    display: none;
+
+  }
 }
