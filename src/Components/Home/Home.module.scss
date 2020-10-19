@@ -1,6 +1,11 @@
 .Home {
   padding: 4rem;
   background-color: #131b1d;
+
+  background-image: url('../../assets/circle.svg');
+  background-repeat: no-repeat;
+  background-position: -200px -300px;
+  background-size: 50rem;
   color: #fff;
   height: 100vh;
   transform-origin: top;
@@ -10,8 +15,11 @@
   }
 
   figure {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 6.5rem;
+    width: 6.5rem;
+    background-color: black;
+    border-radius: 50%;
+    padding: 2rem;
 
     svg {
       height: 100%;
@@ -32,11 +40,11 @@
   }
 
   .text {
-    margin-top: 15rem;
+    margin-top: 25rem;
     margin-bottom: 5rem;
 
     h1 {
-      margin-bottom: 1rem;
+      // margin-bottom: 1rem;
       font-size: 3rem;
     }
 
@@ -48,6 +56,7 @@
     p {
       font-weight: 300;
       margin-bottom: 3rem;
+      // color: #4996ae;
       line-height: 2rem;
       display: flex;
       align-items: center;
@@ -62,7 +71,7 @@
   .socials {
     display: flex;
     justify-content: center;
-    margin-top: 10rem; 
+    // margin-top: 10rem; 
 
     a {
       height: 2.5rem;
@@ -70,7 +79,7 @@
       border-radius: 50%;
       margin: 1rem;
       padding: 0.5rem;
-      background-color: #fff;
+      background-color: #4996ae;
       text-decoration: none;
       display: flex;
       justify-content: center;

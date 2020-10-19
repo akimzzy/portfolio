@@ -14,7 +14,8 @@ const containerVariants = {
 
   visible: {
     scaleY: 1,
-    transition: { ...transition, delay: 0, duration: 2 },
+    transition: { ...transition, delay: 0, duration: 1.5 },
+
   },
 };
 
@@ -27,7 +28,7 @@ const boxVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { ...transition, delay: 2, duration: 0.5 },
+    transition: { ...transition, delay: 1.5, duration: 0.5 },
   },
 };
 
@@ -76,14 +77,14 @@ export default function Contact() {
       animate="visible"
       className={styles.Contact}
     >
-      <div className={styles.top}>
-        <motion.h2 variants={boxVariants} initial="hidden" animate="visible">Contact</motion.h2>
+      <motion.div variants={boxVariants} className={styles.top}>
+        <h2>Contact</h2>
         {useBoxHeight().width <= 1024 ? <div> <Link to='/'>Home</Link> <Link to='/works'>Works</Link> </div> : <></>}
       {/* <p>
         Some of the project done with HTML, CSS/SCSS, Javascript, Reactjs,
         Nodejs, Express, Nextjs, etc.
       </p> */}
-      </div>
+      </motion.div>
 
 
       <motion.div

@@ -1,5 +1,11 @@
 const data = [
   {
+    name: "DAFRIGROUP",
+    techs: ["REACT", "NODEJS"],
+    link: "https://dafrigroup.com",
+    repo: "https://github.com/akimzzy/dafrigroup",
+  },
+  {
     name: "COUNTRY SEARCH",
     techs: ["HTML", "SCSS", "Javascript"],
     link: "https://akimzzy.github.io/Country_search/",

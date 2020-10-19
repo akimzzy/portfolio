@@ -14,7 +14,8 @@ const containerVariants = {
 
   visible: {
     scaleY: 1,
-    transition: { ...transition, delay: 0, duration: 2 },
+    transition: { ...transition, delay: 0, duration: 1.5 },
+
   },
 };
 
@@ -27,7 +28,7 @@ const boxVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { ...transition, delay: 2, duration: 0.5 },
+    transition: { ...transition, delay: 1.5, duration: 0.5 },
   },
 };
 
@@ -47,14 +48,15 @@ export default function Works() {
     document.querySelectorAll("a").forEach((x) => {
       x.addEventListener("mouseover", () => {
         const cursor = document.querySelector(".cursor");
-        cursor.style.transform = "scale(1.7)";
+        cursor.style.transform = "scale(2)";
       });
     });
 
     document.querySelectorAll("a").forEach((x) => {
       x.addEventListener("mouseleave", () => {
         const cursor = document.querySelector(".cursor");
-        cursor.style.transform = "scale(1)";
+        cursor.style.transform = "scale(1) translate(-50%, -50%)";
+
       });
     });
 

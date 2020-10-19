@@ -21,12 +21,12 @@ let transition = { type: "easeOut", delay: 0.3, duration: 0.5 };
 
 const containerVariants = {
   hidden: {
-    scaleY: 0,
+    y: '-100vh',
   },
 
   visible: {
-    scaleY: 1,
-    transition: { ...transition, delay: 0, duration: 2 },
+    y: '0',
+    transition: { ...transition, delay: 0, duration: 1.5 },
   },
 };
 
@@ -39,7 +39,7 @@ const boxVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { ...transition, delay: 2, duration: 0.5 },
+    transition: { ...transition, delay: 1.5, duration: 0.5 },
   },
 };
 
@@ -115,25 +115,25 @@ export default function Home() {
         animate="visible"
         className={styles.socials}
       >
-        <a href="htts://github.com">
+        <a href="https://github.com/akimzzy">
           <img src={require("../../assets/github.svg")} alt="github account" />
         </a>
-        <a href="htts://twitter.com">
+        <a href="https://twitter.com/akimzzy">
           <img
             src={require("../../assets/twitter.svg")}
             alt="twitter account"
           />
         </a>
-        <a href="htts://codepen.com">
+        <a href="https://codepen.io/Akimzzy">
           <img
             src={require("../../assets/codepen.svg")}
             alt="codepen account"
           />
         </a>
-        <a href="htts://linkdin.com">
+        <a href="https://www.linkedin.com/in/akeem-adeyemi-872905154/">
           <img
             src={require("../../assets/linkedin.svg")}
-            alt="linkdIn account"
+            alt="linkedin account"
           />
         </a>
       </motion.div>
