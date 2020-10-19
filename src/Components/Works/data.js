@@ -23,6 +23,12 @@ const data = [
     link: "https://akimzzy.github.io/Speed-typer/",
     repo: "https://github.com/akimzzy/Speed-typer",
   },
+  {
+    name: "EASY BANK STATIC PAGE",
+    techs: ["HTML", "SCSS", "Javascript"],
+    link: "https://akimzzy.github.io/easybank-landing-page-master/",
+    repo: "https://github.com/akimzzy/easybank-landing-page-master",
+  },
 ];
 
 export default data
