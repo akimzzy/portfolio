@@ -2,6 +2,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import styles from "./Contact.module.scss";
 import { motion } from "framer";
+import useBoxHeight from "../useBoxHeight";
+import { Link } from "react-router-dom";
 
 let transition = { type: "easeOut", delay: 0.3, duration: 0.5 };
 
@@ -74,13 +76,15 @@ export default function Contact() {
       animate="visible"
       className={styles.Contact}
     >
-      <motion.h2 variants={boxVariants} initial="hidden" animate="visible">
-        Contact
-      </motion.h2>
+      <div className={styles.top}>
+        <motion.h2 variants={boxVariants} initial="hidden" animate="visible">Contact</motion.h2>
+        {useBoxHeight().width <= 1024 ? <ul> <Link to='/'>Home</Link> <Link to='/works'>Works</Link> </ul> : <></>}
       {/* <p>
         Some of the project done with HTML, CSS/SCSS, Javascript, Reactjs,
         Nodejs, Express, Nextjs, etc.
       </p> */}
+      </div>
+
 
       <motion.div
         variants={boxVariants}

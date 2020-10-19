@@ -2,6 +2,8 @@ import React, { useRef, useEffect } from "react";
 import styles from "./Works.module.scss";
 import data from "./data";
 import { motion } from "framer";
+import useBoxHeight from "../useBoxHeight";
+import { Link } from "react-router-dom";
 
 let transition = { type: "easeOut", delay: 0.3, duration: 0.5 };
 
@@ -30,6 +32,8 @@ const boxVariants = {
 };
 
 export default function Works() {
+  const width = useBoxHeight().width
+
   const container = useRef();
 
   let skewConfig = {
@@ -88,7 +92,10 @@ export default function Works() {
       className={styles.Works}
     >
       <motion.div variants={boxVariants}>
-        <h2>Works</h2>
+        <div className={styles.top}>
+          <h2>Works</h2>
+          {useBoxHeight().width <= 1024 ? <ul> <Link to='/'>Home</Link> <Link to='/contact'>Contact</Link> </ul> : <></>}
+        </div>
         {/* <p>
           Some of the project done with HTML, CSS/SCSS, Javascript, Reactjs,
           Nodejs, Express, Nextjs, etc.

@@ -6,6 +6,25 @@
   overflow: hidden;
   transform-origin: top;
 
+  .top {
+    display: flex;
+    align-items: flex-start;
+
+    h2 {
+      flex: 1;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      li {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
 
   h2 {
     margin-bottom: 1rem;
