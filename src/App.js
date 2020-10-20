@@ -14,7 +14,6 @@ import useBoxHeight from "./Components/useBoxHeight";
 function App() {
   const width = useBoxHeight().width
 
-
   const move = () => {
     const cursor = document.querySelector(".cursor");
     document.addEventListener("mousemove", (e) => {
@@ -30,11 +29,12 @@ function App() {
   return (
     <Router>
       <div className="cursor"></div>
-      <Switch>
-        <Route path="/" exact component={width <= 1024 ? Home : fullHome} />
-        <Route path="/contact" component={width <= 1024 ? Contact : fullHome} />
-        <Route path="/works" component={width <= 1024 ? Works : fullHome} />
-      </Switch>
+
+        <Switch>
+          <Route path="/" exact component={width <= 1024 ? Home : fullHome} />
+          <Route path="/contact" component={width <= 1024 ? Contact : fullHome} />
+          <Route path="/works" component={width <= 1024 ? Works : fullHome} />
+        </Switch>
     </Router>
   );
 }
