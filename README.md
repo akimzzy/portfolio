@@ -1,4 +1,3 @@
 Adeyemi Akeem
 
-
-Web developer
+Portfolio website with react
