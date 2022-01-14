@@ -2,7 +2,7 @@ const data = [
   {
     name: "DAFRIGROUP",
     techs: ["REACT", "NODEJS"],
-    link: "https://dafrigroup.com",
+    link: "https://dafrigroup.netlify.app",
     repo: "https://github.com/akimzzy/dafrigroup",
   },
   {
@@ -37,4 +37,4 @@ const data = [
   },
 ];
 
-export default data
+export default data;
