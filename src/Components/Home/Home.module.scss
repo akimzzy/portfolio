@@ -40,10 +40,20 @@
     }
   }
 
+  
   .text {
     margin-top: 25rem;
     margin-bottom: 5rem;
     margin-right: 0.5rem;
+    .stack {
+      display: flex;
+      margin-left: 1rem;
+      color: rgba($color: #61a1b5, $alpha: 1.0);
+  
+      li {
+        margin-right: 2rem;
+      }
+    }
 
     h1 {
       // margin-bottom: 1rem;
@@ -57,11 +67,12 @@
 
     p {
       font-weight: 300;
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
       // color: #4996ae;
       line-height: 2rem;
       display: flex;
       align-items: center;
+      font-size: 1.2rem;
     }
 
     span {

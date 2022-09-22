@@ -5,12 +5,12 @@ const data = [
     link: "https://dafrigroup.netlify.app",
     repo: "https://github.com/akimzzy/dafrigroup",
   },
-  {
-    name: "COUNTRY SEARCH",
-    techs: ["HTML", "SCSS", "Javascript"],
-    link: "https://akimzzy.github.io/Country_search/",
-    repo: "https://github.com/akimzzy/Country_search",
-  },
+  // {
+  //   name: "COUNTRY SEARCH",
+  //   techs: ["HTML", "SCSS", "Javascript"],
+  //   link: "https://akimzzy.github.io/Country_search/",
+  //   repo: "https://github.com/akimzzy/Country_search",
+  // },
   {
     name: "SLIDER TEMPLATE",
     techs: ["HTML", "SCSS", "Javascript"],
@@ -29,12 +29,12 @@ const data = [
     link: "https://akimzzy.github.io/Speed-typer/",
     repo: "https://github.com/akimzzy/Speed-typer",
   },
-  {
-    name: "EASY BANK STATIC PAGE",
-    techs: ["HTML", "SCSS", "Javascript"],
-    link: "https://akimzzy.github.io/easybank-landing-page-master/",
-    repo: "https://github.com/akimzzy/easybank-landing-page-master",
-  },
+  // {
+  //   name: "EASY BANK STATIC PAGE",
+  //   techs: ["HTML", "SCSS", "Javascript"],
+  //   link: "https://akimzzy.github.io/easybank-landing-page-master/",
+  //   repo: "https://github.com/akimzzy/easybank-landing-page-master",
+  // },
 ];
 
 export default data;

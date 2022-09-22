@@ -108,42 +108,12 @@ export default function Home() {
         className={styles.text}
       >
         <h1>Akeem</h1>
-        <p>
-          Front end developer from Nigeria{" "}
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 44">
-            <g
-              id="Group_1"
-              data-name="Group 1"
-              transform="translate(-473.316 -282)"
-            >
-              <rect
-                id="Rectangle_1"
-                data-name="Rectangle 1"
-                width="67"
-                height="44"
-                transform="translate(473.316 282)"
-                fill="#fff"
-              />
-              <rect
-                id="Rectangle_2"
-                data-name="Rectangle 2"
-                width="23"
-                height="44"
-                transform="translate(473.316 282)"
-                fill="#05d605"
-              />
-              <rect
-                id="Rectangle_3"
-                data-name="Rectangle 3"
-                width="23"
-                height="44"
-                transform="translate(517.316 282)"
-                fill="#05d605"
-              />
-            </g>
-          </svg>
-          {/* <img src={require("../../assets/Nigeria.svg")} alt="Nigeria" /> */}
-        </p>
+        <p>Full stack developer</p>
+        <ul className={styles.stack}>
+          <li>React</li>
+          <li>Vue</li>
+          <li>Nestjs</li>
+        </ul>
         {/* <span>
           A goal-driven front-end developer with an unending passion to learn
           new tech in software development while building responsive websites
