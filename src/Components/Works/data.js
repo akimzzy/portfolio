@@ -1,7 +1,15 @@
 const data = [
   {
+    name: "airbone edu consult".toUpperCase(),
+    techs: ["NEXTJS", "FRAMER MOTION"],
+    type: ["Landing page"],
+    link: "https://airbone.netlify.app/",
+    repo: "https://github.com/akimzzy/airbone-agency",
+  },
+  {
     name: "DAFRIGROUP",
     techs: ["REACT", "NODEJS"],
+    type: ["Landing page"],
     link: "https://dafrigroup.netlify.app",
     repo: "https://github.com/akimzzy/dafrigroup",
   },
@@ -14,18 +22,20 @@ const data = [
   {
     name: "SLIDER TEMPLATE",
     techs: ["HTML", "SCSS", "Javascript"],
+    type: ["Template"],
     link: "https://akimzzy.github.io/Slider/",
     repo: "https://codepen.io/Akimzzy/pen/JjGKMoX",
   },
-  {
-    name: "SOCIAL MEDIA DASHBOARD",
-    techs: ["HTML", "SCSS", "Javascript"],
-    link: "https://akimzzy.github.io/social-media-dashboard/",
-    repo: "https://github.com/akimzzy/social-media-dashboard",
-  },
+  // {
+  //   name: "SOCIAL MEDIA DASHBOARD",
+  //   techs: ["HTML", "SCSS", "Javascript"],
+  //   link: "https://akimzzy.github.io/social-media-dashboard/",
+  //   repo: "https://github.com/akimzzy/social-media-dashboard",
+  // },
   {
     name: "SPEED TYPER",
     techs: ["HTML", "SCSS", "Javascript"],
+    type: ["Game"],
     link: "https://akimzzy.github.io/Speed-typer/",
     repo: "https://github.com/akimzzy/Speed-typer",
   },

@@ -110,9 +110,10 @@ export default function Home() {
         <h1>Akeem</h1>
         <p>Full stack developer</p>
         <ul className={styles.stack}>
-          <li>React</li>
-          <li>Vue</li>
-          <li>Nestjs</li>
+          <li>ReactJS</li>
+          <li>React Native</li>
+          <li>Vue.js</li>
+          <li>NestJs</li>
         </ul>
         {/* <span>
           A goal-driven front-end developer with an unending passion to learn
@@ -130,7 +131,7 @@ export default function Home() {
         <a className={styles.socials.first} href="https://github.com/akimzzy">
           <svg
             id="Bold"
-            enable-background="new 0 0 24 24"
+            enableBackground="new 0 0 24 24"
             height="512"
             viewBox="0 0 24 24"
             width="512"
@@ -152,7 +153,7 @@ export default function Home() {
         <a href="https://codepen.io/Akimzzy">
           <svg
             id="Bold"
-            enable-background="new 0 0 24 24"
+            enableBackground="new 0 0 24 24"
             height="512"
             viewBox="0 0 24 24"
             width="512"

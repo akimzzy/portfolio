@@ -40,7 +40,6 @@
     }
   }
 
-  
   .text {
     margin-top: 25rem;
     margin-bottom: 5rem;
@@ -48,8 +47,8 @@
     .stack {
       display: flex;
       margin-left: 1rem;
-      color: rgba($color: #61a1b5, $alpha: 1.0);
-  
+      color: rgba($color: #a3e8fd, $alpha: 1);
+
       li {
         margin-right: 2rem;
       }
@@ -92,7 +91,7 @@
       border-radius: 50%;
       margin: 1rem;
       padding: 0.5rem;
-      background-color: #4996ae;
+      background-color: rgba($color: #a3e8fd, $alpha: 1);
       text-decoration: none;
       display: flex;
       justify-content: center;

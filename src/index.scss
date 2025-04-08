@@ -23,15 +23,14 @@ html {
   // font-family: "Roboto", "Lucida Sans Regular", "Lucida Grande",
   //   "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   // line-height: 1.1rem;
-  // letter-spacing: 1px;
-  font-family: 'QuickReg';
+  letter-spacing: 0.8px;
+  font-family: "QuickReg";
   background-color: #000000;
 
-  cursor: none;
+  // cursor: none;
 
   @media only screen and (max-width: 1000px) {
     cursor: auto;
-
   }
 }
 
@@ -43,7 +42,6 @@ body {
   min-width: 100vh;
   overflow: hidden;
   background-color: #000000;
-
 }
 
 .container {
@@ -65,20 +63,14 @@ body {
   box-sizing: border-box;
 }
 
-h1 {
-  font-family: 'QuickBold';
+h1,
+h3 {
+  font-family: "QuickBold";
 }
 
 h2 {
   font-size: 2rem;
   // font-weight: 500;
-
-}
-
-h3 {
-  // font-weight: 500;
-  font-family: 'QuickBold';
-
 }
 
 ::-webkit-scrollbar {
@@ -96,23 +88,22 @@ h3 {
   background-color: lighten(#131b1d, 10%);
 }
 
-.cursor {
-  position: fixed;
-  height: 2rem;
-  width: 2rem;
-  background-color: #1a11c7;
-  border-radius: 50%;
-  transition: transform 0.1s ease;
-  // top: -50%;
-  // left: -50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  mix-blend-mode: difference;
-  z-index: 1500;
-  transform-origin: center;
+// .cursor {
+//   position: fixed;
+//   height: 2rem;
+//   width: 2rem;
+//   background-color: #1a11c7;
+//   border-radius: 50%;
+//   transition: transform 0.1s ease;
+//   // top: -50%;
+//   // left: -50%;
+//   transform: translate(-50%, -50%);
+//   pointer-events: none;
+//   mix-blend-mode: difference;
+//   z-index: 1500;
+//   transform-origin: center;
 
-  @media only screen and (max-width: 1000px) {
-    display: none;
-
-  }
-}
+//   @media only screen and (max-width: 1000px) {
+//     display: none;
+//   }
+// }
