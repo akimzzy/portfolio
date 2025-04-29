@@ -3,6 +3,7 @@ import styles from "./Home.module.scss";
 import { motion } from "framer";
 import useBoxHeight from "../useBoxHeight";
 import { Link } from "react-router-dom";
+import ResumeButton from "../ResumeButton/ResumeButton";
 
 let transition = { type: "easeOut", delay: 0.3, duration: 0.5 };
 
@@ -95,6 +96,7 @@ export default function Home() {
           <div>
             {" "}
             <Link to="/works">WORKS</Link> <Link to="/contact">CONTACT</Link>{" "}
+            <ResumeButton />
           </div>
         ) : (
           <></>

@@ -5,6 +5,7 @@ import { motion } from "framer";
 import useBoxHeight from "../useBoxHeight";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import ResumeButton from "../ResumeButton/ResumeButton";
 
 let transition = { type: "easeOut", delay: 0.3, duration: 0.5 };
 
@@ -97,10 +98,12 @@ export default function Contact() {
     >
       <motion.div variants={boxVariants} className={styles.top}>
         <h2>Contact</h2>
+
         {useBoxHeight().width <= 1024 ? (
           <div>
             {" "}
             <Link to="/">Home</Link> <Link to="/works">Works</Link>{" "}
+            <ResumeButton />
           </div>
         ) : (
           <></>
