@@ -1,14 +1,21 @@
 const data = [
   {
+    name: "Invoice app".toUpperCase(),
+    techs: ["Vue.js", "tailwindcss", "Dexie.js"],
+    type: ["PWA(Offline first)"],
+    link: "https://iinvoice.netlify.app/",
+    repo: "https://github.com/akimzzy/invoice",
+  },
+  {
     name: "airbone edu consult".toUpperCase(),
-    techs: ["NEXTJS", "FRAMER MOTION"],
+    techs: ["Next.js", "Motion"],
     type: ["Landing page"],
     link: "https://airbone.netlify.app/",
     repo: "https://github.com/akimzzy/airbone-agency",
   },
   {
     name: "DAFRIGROUP",
-    techs: ["REACT", "NODEJS"],
+    techs: ["React", "NodeJs"],
     type: ["Landing page"],
     link: "https://dafrigroup.netlify.app",
     repo: "https://github.com/akimzzy/dafrigroup",
